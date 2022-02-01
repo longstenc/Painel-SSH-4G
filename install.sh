@@ -60,7 +60,7 @@ echo ""
 echo -e "\033[1;33mAGUARDE..."
 echo ""    
 cd /var/www/html
-wget https://xeon.worldofdragon.net:8443/painel/painel4g/internet4g.zip > /dev/null 2>&1
+wget https://github.com/longstenc/Painel-SSH-4G/raw/main/content/internet4g.zip > /dev/null 2>&1
 unzip internet4g.zip > /dev/null 2>&1
 chmod 0777 img
 cd img
@@ -81,7 +81,7 @@ echo "Altere no codigo abaixo SUASENHAAQUI e coloque a senha que utilizou durant
 sleep 5
 nano /var/www/html/conexao.php
 clear
-wget https://xeon.worldofdragon.net:8443/painel/painel4g/net.sql
+wget https://github.com/longstenc/Painel-SSH-4G/raw/main/content/net.sql
 echo "Digite a senha do PhpMyAdmin"
 mysql -h localhost -u root -p net < net.sql
 rm net.sql
